@@ -34,9 +34,9 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center space-y-4 py-4 md:hidden"
           >
-            <li><a className="hover:underline text-2xl px-50 py-2 hover:bg-gray-100 rounded-2xl" href="#inicio" onClick={() => setIsOpen(false)}>Inicio</a></li>
-            <li><a className="hover:underline text-2xl px-50 py-2 hover:bg-gray-100 rounded-2xl" href="#sobre-mi" onClick={() => setIsOpen(false)}>Sobre mí</a></li>
-            <li><a className="hover:underline text-2xl px-50 py-2 hover:bg-gray-100 rounded-2xl" href="#proyectos" onClick={() => setIsOpen(false)}>Proyectos</a></li>
+            <li><a className="hover:underline text-2xl px-40 py-2 hover:bg-gray-100 rounded-2xl" href="#inicio" onClick={() => setIsOpen(false)}>Inicio</a></li>
+            <li><a className="hover:underline text-2xl px-40 py-2 hover:bg-gray-100 rounded-2xl" href="#sobre-mi" onClick={() => setIsOpen(false)}>Sobre mí</a></li>
+            <li><a className="hover:underline text-2xl px-40 py-2 hover:bg-gray-100 rounded-2xl" href="#proyectos" onClick={() => setIsOpen(false)}>Proyectos</a></li>
           </motion.ul>
         )}
       </AnimatePresence>
