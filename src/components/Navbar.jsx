@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-8 flex justify-center ">
         <ul className="hidden md:flex space-x-8 text-gray-700 text-3xl font-semibold">
           <li><a href="#inicio" className="p-2 hover:underline hover:bg-gray-100 rounded-2xl">Inicio</a></li>
-          <li><a href="#sobre-mi" className="p-2 hover:underline hover:bg-gray-100 rounded-2xl">Sobre mí</a></li>
+          <li><a href="#sobre-mi" className="p-2 hover:underline hover:bg-gray-100 rounded-2xl">Acerca de mí</a></li>
           <li><a href="#proyectos" className="p-2 hover:underline hover:bg-gray-100 rounded-2xl">Proyectos</a></li>
 
         </ul>
