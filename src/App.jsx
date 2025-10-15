@@ -7,6 +7,7 @@ import AboutMe from './sections/AboutMe';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import CustomToaster from './components/CustomToaster';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <AboutMe />
       <Projects />
       <Contact />
+      <Footer />
     </div >
   )
 }
