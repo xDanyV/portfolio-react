@@ -6,7 +6,7 @@ export default function Technologies() {
     return (
         <section
             id="tecnologias"
-            className="min-h-[60vh] flex flex-col items-center justify-center bg-gray-100 py-16"
+            className="min-h-[60vh] flex flex-col items-center justify-center bg-gray-200 py-16 inset-shadow-sm inset-shadow-gray-300 px-4"
         >
             <h2 className="text-4xl font-bold text-gray-800 mb-10">Tecnologías</h2>
 
