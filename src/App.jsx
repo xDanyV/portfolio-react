@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
@@ -12,7 +11,7 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div className="scroll-smooth">
+    <>
       <CustomToaster />
       <Navbar />
       <Hero />
@@ -21,7 +20,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </div >
+    </ >
   )
 }
 
