@@ -13,7 +13,7 @@ export default function Projects() {
                 transition={{ duration: 0.7 }}
                 className="text-center mb-16"
             >
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-100">
+                <h2 className="text-5xl font-bold mb-4 text-gray-100">
                     Proyectos
                 </h2>
                 <div className="w-20 h-1 bg-gray-50 mx-auto"></div>
