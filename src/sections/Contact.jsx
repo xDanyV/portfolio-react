@@ -70,16 +70,52 @@ export default function Contact() {
 
 
                 <div className="relative group flex flex-col items-center cursor-pointer">
-                    <motion.a
-                        href="../public/CV-Daniel-Valencia.pdf"
-                        download="CV-Daniel-Valencia.pdf"
+                    <motion.div
+                        onClick={() => {
+
+                            const toastId = "cv-download-toast";
+
+                            toast.custom(
+                                (t) => (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: -20, scale: 0.8 }}
+                                        animate={{
+                                            opacity: t.visible ? 1 : 0,
+                                            y: t.visible ? 0 : 10,
+                                            scale: t.visible ? 1 : 0.8,
+                                        }}
+                                        transition={{ duration: 0.25 }}
+                                        className="max-w-md w-full bg-gray-800 text-white rounded-xl shadow-2xl p-5 flex items-center justify-between gap-4"
+                                    >
+                                        <p className="text-lg font-bold">
+                                            ¿Deseas descargar mi CV?
+                                        </p>
+
+                                        <div className="flex gap-2">
+                                            <a
+                                                href="/CV-Daniel-Valencia.pdf"
+                                                download
+                                                onClick={() => toast.dismiss(t.id)}
+                                                className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-semibold transition-all duration-200"
+                                            >
+                                                Descargar
+                                            </a>
+                                        </div>
+                                    </motion.div>
+                                ),
+                                { id: "cv-download-toast" }
+                            );
+
+
+
+                        }}
                         whileHover={{ scale: 1.2, rotate: 5 }}
                         whileTap={{ scale: 0.95 }}
                         transition={{ type: "spring", stiffness: 200 }}
                         className="hover:text-blue-500 cursor-pointer"
                     >
                         <HiDocumentDownload />
-                    </motion.a>
+                    </motion.div>
                     <span className="absolute top-full mt-2 text-lg text-gray-700 font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         CV
                     </span>

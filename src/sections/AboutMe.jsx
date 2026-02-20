@@ -22,7 +22,7 @@ export default function AboutMe() {
           transition={{ duration: 0.7 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          <h2 className="text-5xl font-bold mb-4 text-gray-800">
             Acerca de mí
           </h2>
           <div className="w-16 sm:w-20 h-1 bg-blue-600 mx-auto"></div>
@@ -38,7 +38,7 @@ export default function AboutMe() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="space-y-6"
           >
-            <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
+            <p className="text-gray-700 leading-relaxed text-md md:text-xl justify-evenly">
               Soy egresado de{" "}
               <span className="font-semibold">
                 Ingeniería en Desarrollo de Software
@@ -51,7 +51,7 @@ export default function AboutMe() {
               .
             </p>
 
-            <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
+            <p className="text-gray-700 leading-relaxed text-md md:text-xl justify-evenly">
               He trabajado con frameworks modernos como{" "}
               <span className="font-semibold">React</span> y{" "}
               <span className="font-semibold">Angular</span>, aplicando metodologías
