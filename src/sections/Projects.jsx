@@ -26,7 +26,17 @@ export default function Projects() {
                         description: "Landing page para una pastelería con catálogo de productos y contacto.",
                         tech: "React, Tailwind, Framer Motion",
                         link: "https://bakery-page-tw.vercel.app/",
+                        // Agregamos la ruta de la imagen aquí
+                        image: "/projects/RosaPastel.png",
                     },
+                    {
+                        title: "Barbershop SaaS",
+                        description: "Landing page para un servicio de barbería con funcionalidades SaaS.",
+                        tech: "React, Tailwind, Framer Motion, NEXT.JS",
+                        link: "https://barbershop-saas-azure.vercel.app/",
+                        // Agregamos la ruta de la nueva imagen aquí
+                        image: "/projects/BarberShop.png",
+                    }
                 ].map((proyecto, index) => (
                     <motion.a
                         key={index}
@@ -43,9 +53,11 @@ export default function Projects() {
                         {/* Imagen del proyecto */}
                         <div className="h-48 overflow-hidden relative">
                             <img
-                                src="/projects/RosaPastel.png"
-                                alt="Vista previa del proyecto Repostería Rosa Pastel"
-                                className="object-cover  transform group-hover:scale-105 transition-transform duration-500"
+                                // Usamos la propiedad dinámica 'proyecto.image'
+                                src={proyecto.image}
+                                // Hacemos el 'alt' dinámico también para mejor accesibilidad (SEO)
+                                alt={`Vista previa del proyecto ${proyecto.title}`}
+                                className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
                             />
                         </div>
 
@@ -69,7 +81,6 @@ export default function Projects() {
                     </motion.a>
                 ))}
             </div>
-
         </section>
     );
 }
