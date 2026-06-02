@@ -1,0 +1,195 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About me",
+        "projects": "Projects",
+        "switchLanguage": "ES",
+        "changeLanguage": "Change language",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi! I'm",
+        "name": "Daniel Valencia",
+        "role": "Software Developer",
+        "descriptionStart": "passionate about creating",
+        "modern": "modern",
+        "and": "and",
+        "functional": "functional",
+        "descriptionEnd": "web experiences, focused on intuitive interfaces, optimal performance, and responsive design.",
+        "button": "Technologies",
+        "eyebrow": "Available for frontend opportunities",
+        "projectsButton": "View projects",
+        "highlights": [
+            {
+                "label": "Frontend",
+                "value": "React / Next.js"
+            },
+            {
+                "label": "Language",
+                "value": "TypeScript"
+            },
+            {
+                "label": "Deploy",
+                "value": "Vercel"
+            }
+        ],
+        "preview": {
+            "title": "Building web experiences",
+            "subtitle": "Clean, responsive interfaces focused on product.",
+            "items": [
+                "Responsive design",
+                "Modern UI",
+                "Best practices"
+            ]
+        },
+        "carousel": [
+            {
+                "title": "Modern frontend",
+                "text": "Clean, responsive interfaces focused on user experience."
+            },
+            {
+                "title": "Web applications",
+                "text": "Development with React, Next.js, TypeScript, and Tailwind CSS."
+            },
+            {
+                "title": "Real product work",
+                "text": "Projects with dashboards, REST APIs, Vercel deployment, and good practices."
+            }
+        ]
+    },
+    "technologies": {
+        "title": "Technologies",
+        "subtitle": "Tools and technologies I use to build modern, scalable, and responsive web applications.",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend and APIs",
+            "database": "Databases",
+            "tools": "Tools and DevOps",
+            "languages": "Languages"
+        }
+    },
+    "about": {
+        "badge": "Professional profile",
+        "title": "About me",
+        "descriptionOne": "I am a Software Development graduate specialized in building modern web applications, intuitive interfaces, and solutions focused on real-world problems.",
+        "descriptionTwo": "I am focused on growing as a frontend developer, contributing to teams where continuous learning, product quality, and constant improvement are valued.",
+        "cards": [
+            {
+                "title": "Education",
+                "text": "Software Development Engineering"
+            },
+            {
+                "title": "Focus",
+                "text": "Modern and responsive web applications"
+            },
+            {
+                "title": "Experience",
+                "text": "SaaS projects, REST APIs, and dashboards"
+            }
+        ],
+        "softSkillsTitle": "Soft skills",
+        "softSkills": [
+            "Problem solving",
+            "Continuous learning",
+            "Teamwork",
+            "Effective communication",
+            "Adaptability",
+            "Organization"
+        ],
+        "cta": "View projects",
+        "focusTitle": "Currently focused on",
+        "focusItems": [
+            {
+                "title": "Modern frontend",
+                "text": "React, Next.js, and TypeScript for clean and maintainable interfaces."
+            },
+            {
+                "title": "Product and experience",
+                "text": "Dashboards, user flows, and responsive design."
+            },
+            {
+                "title": "Team collaboration",
+                "text": "Scrum, effective communication, and task tracking."
+            }
+        ],
+        "stackLabel": "Main stack",
+        "mainStack": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "REST APIs",
+            "Scrum",
+            "GitHub",
+            "Vercel"
+        ]
+    },
+    "projects": {
+        "badge": "Portfolio",
+        "title": "Projects",
+        "subtitle": "Some projects where I apply modern frontend, responsive design, animations, and real functionality.",
+        "liveDemo": "View project",
+        "featured": "Featured",
+        "items": [
+            {
+                "title": "Rosa Pastel Bakery",
+                "description": "Landing page for a bakery with a product catalog, attractive visual design, and contact section.",
+                "type": "Landing page",
+                "status": "Live deploy",
+                "tech": [
+                    "React",
+                    "Tailwind",
+                    "Framer Motion"
+                ],
+                "link": "https://bakery-page-tw.vercel.app/",
+                "image": "/projects/RosaPastel.png",
+                "imageAlt": "Preview of Rosa Pastel Bakery project"
+            },
+            {
+                "title": "Barbershop SaaS",
+                "description": "SaaS project for barbershop management, focused on bookings, appointment administration, and user experience.",
+                "type": "SaaS web app",
+                "status": "Personal project",
+                "tech": [
+                    "Next.js",
+                    "TypeScript",
+                    "Prisma",
+                    "Vercel"
+                ],
+                "link": "https://barbershop-saas-azure.vercel.app/",
+                "image": "/projects/BarberShop.png",
+                "imageAlt": "Preview of Barbershop SaaS project"
+            }
+        ]
+    },
+    "contact": {
+        "badge": "Contact",
+        "title": "Let's work together",
+        "subtitle": "If you have an opportunity, collaboration, or want to know more about my work, you can reach me through these channels.",
+        "github": "GitHub",
+        "email": "Email",
+        "linkedin": "LinkedIn",
+        "cv": "Resume",
+        "copyEmail": "Copy email",
+        "emailCopied": "Email copied to clipboard",
+        "downloadQuestion": "Do you want to download my resume?",
+        "download": "Download",
+        "cancel": "Cancel",
+        "availability": "Available for frontend opportunities, web projects, and collaboration on digital products.",
+        "directEmail": "Direct email"
+    },
+    "footer": {
+        "name": "Daniel Valencia Garcia",
+        "role": "Software Developer",
+        "description": "Building modern, responsive interfaces focused on user experience.",
+        "navigation": "Navigation",
+        "social": "Social",
+        "backToTop": "Back to top",
+        "rights": "All rights reserved.",
+        "links": {
+            "home": "Home",
+            "about": "About me",
+            "projects": "Projects",
+            "contact": "Contact"
+        }
+    }
+}
