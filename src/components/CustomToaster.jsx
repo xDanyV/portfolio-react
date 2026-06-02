@@ -1,23 +1,59 @@
+import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
 
 export default function CustomToaster() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   return (
     <Toaster
-      position="top-right"
+      position={isMobile ? "top-center" : "top-right"}
+      gutter={12}
+      containerStyle={{
+        top: 20,
+        left: 16,
+        right: 16,
+      }}
       toastOptions={{
+        duration: 3000,
         style: {
-          background: "#1f2937",
-          color: "#fff",
-          borderRadius: "8px",
-          padding: "12px 16px",
-          fontWeight: 500,
+          background: "#030712",
+          color: "#ffffff",
+          borderRadius: "18px",
+          padding: "14px 18px",
+          fontWeight: 600,
+          border: "1px solid rgba(255, 255, 255, 0.10)",
+          boxShadow: "0 20px 45px rgba(15, 23, 42, 0.25)",
+          maxWidth: "420px",
         },
         success: {
-          style: { background: "#1f2937" },
-          iconTheme: { primary: "#fff", secondary: "#1f2937", size: 20 },
+          iconTheme: {
+            primary: "#2563eb",
+            secondary: "#ffffff",
+          },
         },
         error: {
-          style: { background: "#dc2626" }, 
+          style: {
+            background: "#7f1d1d",
+            color: "#ffffff",
+            border: "1px solid rgba(248, 113, 113, 0.35)",
+          },
+          iconTheme: {
+            primary: "#ffffff",
+            secondary: "#7f1d1d",
+          },
         },
       }}
     />
