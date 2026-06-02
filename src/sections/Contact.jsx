@@ -93,7 +93,7 @@ export default function Contact() {
 
                                         <div className="flex gap-2">
                                             <a
-                                                href="/CV-Daniel-Valencia.pdf"
+                                                href="/CV_dvg_01_06_26.pdf"
                                                 download
                                                 onClick={() => toast.dismiss(t.id)}
                                                 className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-sm font-semibold transition-all duration-200"
