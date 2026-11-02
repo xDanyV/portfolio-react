@@ -92,9 +92,8 @@ export default function Technologies({ t }) {
     return (
         <section
             id="tecnologias"
-            className="relative overflow-hidden bg-gray-100 py-20 px-5 md:py-24"
+            className="relative overflow-hidden bg-gray-100 py-24 px-5 md:py-32"
         >
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,#dbeafe,transparent_35%),linear-gradient(to_bottom,#f3f4f6,#e5e7eb)]" />
 
             <div className="max-w-6xl mx-auto">
                 <motion.div
@@ -102,17 +101,13 @@ export default function Technologies({ t }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.5 }}
-                    className="text-center mb-12"
+                    className="mb-14 md:mb-20 grid gap-6 md:grid-cols-[1fr_1fr] md:items-end"
                 >
-                    <span className="inline-block mb-4 px-4 py-2 rounded-full bg-white text-blue-800 text-sm md:text-base font-semibold border border-blue-100 shadow-sm">
-                        Stack
-                    </span>
-
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-5">
+                    <h2 className="text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-[-0.03em] leading-[0.95] text-gray-950">
                         {t.title}
                     </h2>
 
-                    <p className="max-w-3xl mx-auto text-gray-700 text-lg md:text-xl leading-relaxed">
+                    <p className="max-w-xl text-gray-800 text-lg md:text-xl leading-relaxed">
                         {t.subtitle}
                     </p>
                 </motion.div>
@@ -122,13 +117,13 @@ export default function Technologies({ t }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.25 }}
                     transition={{ duration: 0.5 }}
-                    className="bg-white/85 backdrop-blur-md border border-gray-200 rounded-3xl shadow-sm p-4 sm:p-6 md:p-8"
+                    className="bg-white rounded-3xl p-4 sm:p-6 md:p-10"
                 >
-                    <div className="overflow-x-auto pb-2 mb-8 [scrollbar-width:none]">
+                    <div className="mb-10">
                         <div
                             role="tablist"
                             aria-label="Technology categories"
-                            className="flex min-w-max gap-2 sm:gap-3 bg-gray-100 border border-gray-200 rounded-3xl p-2"
+                            className="flex flex-wrap gap-2 sm:gap-3"
                         >
                             {technologyGroups.map((group) => {
                                 const isActive = activeTab === group.id;
@@ -140,15 +135,15 @@ export default function Technologies({ t }) {
                                         role="tab"
                                         aria-selected={isActive}
                                         onClick={() => setActiveTab(group.id)}
-                                        className={`relative px-4 py-3 rounded-2xl text-sm sm:text-base font-bold transition-all duration-300 cursor-pointer ${isActive
+                                        className={`relative px-5 py-3 rounded-full text-base font-bold transition-colors duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800 ${isActive
                                                 ? "text-white"
-                                                : "text-gray-700 hover:text-gray-950 hover:bg-white"
+                                                : "bg-gray-100 text-gray-800 hover:text-gray-950 hover:bg-gray-200"
                                             }`}
                                     >
                                         {isActive && (
                                             <motion.span
                                                 layoutId="activeTechnologyTab"
-                                                className="absolute inset-0 bg-blue-800 rounded-2xl shadow-md"
+                                                className="absolute inset-0 bg-blue-800 rounded-full"
                                                 transition={{
                                                     type: "spring",
                                                     stiffness: 350,
@@ -176,13 +171,11 @@ export default function Technologies({ t }) {
                                 transition={{ duration: 0.25 }}
                             >
                                 <div className="flex items-center gap-3 mb-7">
-                                    <div className="w-2 h-8 bg-blue-800 rounded-full" />
-
                                     <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
                                         {activeGroup.title}
                                     </h3>
 
-                                    <span className="ml-auto text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                    <span className="ml-auto text-base font-semibold text-gray-700 bg-gray-100 px-3 py-1 rounded-full">
                                         {activeGroup.items.length}
                                     </span>
                                 </div>
@@ -205,7 +198,7 @@ export default function Technologies({ t }) {
                                                     scale: 1.04,
                                                 }}
                                                 whileTap={{ scale: 0.96 }}
-                                                className="group flex flex-col items-center justify-center gap-3 min-h-32 rounded-2xl bg-gray-50 border border-gray-200 p-4 text-gray-700 shadow-sm hover:bg-white hover:shadow-md hover:border-blue-200 transition-all duration-300 cursor-default"
+                                                className="group flex flex-col items-center justify-center gap-3 min-h-32 rounded-2xl bg-gray-100 p-4 text-gray-800 hover:bg-blue-50 transition-colors duration-300 cursor-default"
                                             >
                                                 <motion.div
                                                     animate={{ y: [0, -4, 0] }}
@@ -220,7 +213,7 @@ export default function Technologies({ t }) {
                                                     <Icon />
                                                 </motion.div>
 
-                                                <span className="text-sm sm:text-base text-center font-bold text-gray-800">
+                                                <span className="text-base text-center font-bold text-gray-950">
                                                     {technology.name}
                                                 </span>
                                             </motion.div>
