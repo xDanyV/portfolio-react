@@ -20,7 +20,11 @@ const translations = {
 
 function App() {
   const [language, setLanguage] = useState(() => {
-    return localStorage.getItem("portfolio-language") || "es";
+    try {
+      return localStorage.getItem("portfolio-language") || "es";
+    } catch {
+      return "es";
+    }
   });
 
   const currentTranslation = useMemo(() => {
@@ -34,7 +38,11 @@ function App() {
   };
 
   useEffect(() => {
-    localStorage.setItem("portfolio-language", language);
+    try {
+      localStorage.setItem("portfolio-language", language);
+    } catch {
+      // localStorage no disponible (modo privado, cookies bloqueadas)
+    }
     document.documentElement.lang = language;
   }, [language]);
 

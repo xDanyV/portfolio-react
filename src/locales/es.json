@@ -43,19 +43,19 @@
             ]
         },
         "carousel": [
-  {
-    "title": "Frontend moderno",
-    "text": "Interfaces limpias, responsivas y enfocadas en la experiencia del usuario."
-  },
-  {
-    "title": "Aplicaciones web",
-    "text": "Desarrollo con React, Next.js, TypeScript y Tailwind CSS."
-  },
-  {
-    "title": "Producto real",
-    "text": "Proyectos con dashboards, APIs REST, deploy en Vercel y buenas prácticas."
-  }
-]
+            {
+                "title": "Frontend moderno",
+                "text": "Interfaces limpias, responsivas y enfocadas en la experiencia del usuario."
+            },
+            {
+                "title": "Aplicaciones web",
+                "text": "Desarrollo con React, Next.js, TypeScript y Tailwind CSS."
+            },
+            {
+                "title": "Producto real",
+                "text": "Proyectos con dashboards, APIs REST, deploy en Vercel y buenas prácticas."
+            }
+        ]
     },
     "technologies": {
         "title": "Tecnologías",
@@ -129,37 +129,22 @@
         "subtitle": "Algunos proyectos donde aplico frontend moderno, diseño responsivo, animaciones e integración de funcionalidades reales.",
         "liveDemo": "Ver proyecto",
         "featured": "Destacado",
-        "items": [
-            {
+        "items": {
+            "rosa-pastel": {
                 "title": "Repostería Rosa Pastel",
                 "description": "Landing page para una pastelería con catálogo de productos, diseño visual atractivo y sección de contacto.",
                 "type": "Landing page",
                 "status": "Deploy activo",
-                "tech": [
-                    "React",
-                    "Tailwind",
-                    "Framer Motion"
-                ],
-                "link": "https://bakery-page-tw.vercel.app/",
-                "image": "/projects/RosaPastel.png",
                 "imageAlt": "Vista previa del proyecto Repostería Rosa Pastel"
             },
-            {
+            "barbershop-saas": {
                 "title": "Barbershop SaaS",
                 "description": "Proyecto SaaS para gestión de barberías, enfocado en reservas, administración de citas y experiencia de usuario.",
                 "type": "SaaS web app",
                 "status": "Proyecto personal",
-                "tech": [
-                    "Next.js",
-                    "TypeScript",
-                    "Prisma",
-                    "Vercel"
-                ],
-                "link": "https://barbershop-saas-azure.vercel.app/",
-                "image": "/projects/BarberShop.png",
                 "imageAlt": "Vista previa del proyecto Barbershop SaaS"
             }
-        ]
+        }
     },
     "contact": {
         "badge": "Contacto",
@@ -175,7 +160,8 @@
         "download": "Descargar",
         "cancel": "Cancelar",
         "availability": "Disponible para oportunidades frontend, proyectos web y colaboración en productos digitales.",
-        "directEmail": "Correo directo"
+        "directEmail": "Correo directo",
+        "copyError": "No se pudo copiar el correo"
     },
     "footer": {
         "name": "Daniel Valencia Garcia",

@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, ExternalLink, Sparkles } from "lucide-react";
+import { projects as projectData } from "../data/projects";
 
 export default function Projects({ t }) {
-    const projects = Array.isArray(t?.items) ? t.items : [];
+    // Combina los datos fijos de cada proyecto con sus textos traducidos
+    const projects = projectData
+        .filter((project) => t?.items?.[project.id])
+        .map((project) => ({ ...project, ...t.items[project.id] }));
 
     return (
         <section
@@ -38,14 +42,14 @@ export default function Projects({ t }) {
                 <div className="grid gap-7 lg:grid-cols-2">
                     {projects.map((project, index) => (
                         <motion.a
-                            key={project.title}
+                            key={project.id}
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 35 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.2 }}
-                            transition={{ delay: index * 0.12, duration: 0.5 }}
+                            transition={{ delay: (index % 2) * 0.12, duration: 0.5 }}
                             whileHover={{ y: -10 }}
                             whileTap={{ scale: 0.98 }}
                             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.06] shadow-xl backdrop-blur-md"
@@ -54,12 +58,14 @@ export default function Projects({ t }) {
                                 <img
                                     src={project.image}
                                     alt={project.imageAlt}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent" />
 
-                                {index === 1 && (
+                                {project.featured && (
                                     <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-blue-700 px-4 py-2 text-sm font-bold text-white shadow-md">
                                         <Sparkles size={16} />
                                         {t?.featured}

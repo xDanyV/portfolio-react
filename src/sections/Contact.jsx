@@ -12,7 +12,7 @@ export default function Contact({ t }) {
             await navigator.clipboard.writeText(email);
             toast.success(t.emailCopied);
         } catch {
-            toast.error("No se pudo copiar el correo");
+            toast.error(t.copyError);
         }
     };
 
