@@ -32,12 +32,9 @@ export default function Footer({ t }) {
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-gray-950 text-gray-300 px-5 pt-16 pb-28 md:pb-8">
-      <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:38px_38px]" />
-      <div className="absolute -top-24 right-0 w-72 h-72 bg-blue-700/20 rounded-full blur-3xl" />
-
+    <footer className="relative overflow-hidden bg-gray-950 text-gray-300 px-5 pt-20 pb-28 md:pb-10">
       <div className="relative max-w-6xl mx-auto">
-        <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr] pb-10 border-b border-white/10">
+        <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr] pb-16">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +49,7 @@ export default function Footer({ t }) {
               {t.role}
             </p>
 
-            <p className="max-w-md text-gray-400 leading-relaxed">
+            <p className="max-w-md text-gray-300 leading-relaxed">
               {t.description}
             </p>
           </motion.div>
@@ -72,7 +69,7 @@ export default function Footer({ t }) {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-blue-200 transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -104,7 +101,7 @@ export default function Footer({ t }) {
                     whileHover={{ y: -5, scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     aria-label={link.label}
-                    className="w-12 h-12 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-blue-700 transition-colors"
+                    className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-blue-700 transition-colors"
                   >
                     <Icon size={24} />
                   </motion.a>
@@ -127,7 +124,7 @@ export default function Footer({ t }) {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.25, duration: 0.45 }}
-          className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-sm text-gray-500 text-center"
+          className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-sm text-gray-400 text-center"
         >
           <p>
             © {currentYear} {t.name}. {t.rights}

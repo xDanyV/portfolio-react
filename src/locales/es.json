@@ -10,12 +10,12 @@
     "hero": {
         "greeting": "¡Hola! Soy",
         "name": "Daniel Valencia",
-        "role": "Desarrollador Software",
+        "role": "Desarrollador de software",
         "descriptionStart": "apasionado por crear experiencias web",
         "modern": "modernas",
         "and": "y",
         "functional": "funcionales",
-        "descriptionEnd": "enfocándome en interfaces intuitivas, rendimiento óptimo y diseño responsivo.",
+        "descriptionEnd": ", enfocado en interfaces intuitivas, rendimiento óptimo y diseño responsivo.",
         "button": "Tecnologías",
         "eyebrow": "Disponible para oportunidades frontend",
         "projectsButton": "Ver proyectos",
@@ -69,7 +69,6 @@
         }
     },
     "about": {
-        "badge": "Perfil profesional",
         "title": "Acerca de mí",
         "descriptionOne": "Soy egresado de Ingeniería en Desarrollo de Software, especializado en la construcción de aplicaciones web modernas, interfaces intuitivas y soluciones orientadas a problemas reales.",
         "descriptionTwo": "Me interesa seguir creciendo como desarrollador frontend, aportando en equipos donde se valore el aprendizaje continuo, la calidad del producto y la mejora constante.",
@@ -124,37 +123,34 @@
         ]
     },
     "projects": {
-        "badge": "Portafolio",
         "title": "Proyectos",
         "subtitle": "Algunos proyectos donde aplico frontend moderno, diseño responsivo, animaciones e integración de funcionalidades reales.",
         "liveDemo": "Ver proyecto",
-        "featured": "Destacado",
         "items": {
             "matchbox": {
                 "title": "Matchbox",
                 "description": "App web estilo Letterboxd para partidos de la Champions League: califica y reseña partidos, vota al MVP, lleva un diario de lo que viste y consulta estadísticas, alineaciones y clasificaciones de 439 partidos (2022-2025).",
-                "type": "Full-stack web app",
-                "status": "En desarrollo",
                 "imageAlt": "Vista previa del proyecto Matchbox"
+            },
+            "ruta-uno": {
+                "title": "Ruta Uno Café & Pizza",
+                "description": "Landing page para una pizzería y cafetería en Tijuana: carrusel de pizzas, menú por categorías, barra de café de especialidad y ubicación con horarios.",
+                "imageAlt": "Vista previa del proyecto Ruta Uno Café & Pizza"
             },
             "rosa-pastel": {
                 "title": "Repostería Rosa Pastel",
                 "description": "Landing page para una pastelería con catálogo de productos, diseño visual atractivo y sección de contacto.",
-                "type": "Landing page",
-                "status": "Deploy activo",
                 "imageAlt": "Vista previa del proyecto Repostería Rosa Pastel"
             },
             "barbershop-saas": {
                 "title": "Barbershop SaaS",
                 "description": "Proyecto SaaS para gestión de barberías, enfocado en reservas, administración de citas y experiencia de usuario.",
-                "type": "SaaS web app",
-                "status": "Proyecto personal",
                 "imageAlt": "Vista previa del proyecto Barbershop SaaS"
             }
-        }
+        },
+        "techLabel": "Tecnologías usadas"
     },
     "contact": {
-        "badge": "Contacto",
         "title": "Trabajemos juntos",
         "subtitle": "Si tienes una oportunidad, colaboración o quieres conocer más sobre mi trabajo, puedes contactarme por estos medios.",
         "github": "GitHub",

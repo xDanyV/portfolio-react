@@ -90,9 +90,8 @@ export default function Contact({ t }) {
     return (
         <section
             id="contacto"
-            className="relative overflow-hidden bg-gray-100 px-5 py-20 md:py-24"
+            className="relative overflow-hidden bg-gray-100 px-5 py-24 md:py-32"
         >
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,#dbeafe,transparent_35%),linear-gradient(to_bottom,#f3f4f6,#ffffff)]" />
 
             <div className="max-w-6xl mx-auto">
                 <motion.div
@@ -100,17 +99,13 @@ export default function Contact({ t }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.5 }}
-                    className="text-center mb-14"
+                    className="mb-14 md:mb-20 grid gap-6 md:grid-cols-[1fr_1fr] md:items-end"
                 >
-                    <span className="inline-block mb-4 px-4 py-2 rounded-full bg-white text-blue-800 text-sm md:text-base font-semibold border border-blue-100 shadow-sm">
-                        {t.badge}
-                    </span>
-
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-5">
+                    <h2 className="text-5xl sm:text-6xl md:text-8xl font-extrabold tracking-[-0.03em] leading-[0.95] text-gray-950">
                         {t.title}
                     </h2>
 
-                    <p className="max-w-3xl mx-auto text-gray-700 text-lg md:text-xl leading-relaxed">
+                    <p className="max-w-xl text-gray-800 text-lg md:text-xl leading-relaxed">
                         {t.subtitle}
                     </p>
                 </motion.div>
@@ -121,25 +116,22 @@ export default function Contact({ t }) {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, amount: 0.25 }}
                         transition={{ duration: 0.55 }}
-                        className="bg-gray-950 text-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl overflow-hidden relative"
+                        className="bg-blue-800 text-white rounded-3xl p-6 sm:p-8 md:p-10 overflow-hidden relative"
                     >
-                        <div className="absolute -top-24 -right-24 w-64 h-64 bg-blue-700/30 rounded-full blur-3xl" />
-                        <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl" />
-
                         <div className="relative">
                             <h3 className="text-2xl md:text-3xl font-bold mb-5">
                                 {t.directEmail}
                             </h3>
 
-                            <p className="text-gray-300 leading-relaxed text-base md:text-lg mb-7">
+                            <p className="text-blue-50 leading-relaxed text-lg mb-7">
                                 {t.availability}
                             </p>
 
                             <button
                                 onClick={copyEmail}
-                                className="w-full text-left rounded-2xl bg-white/10 border border-white/10 p-5 hover:bg-white/15 transition cursor-pointer"
+                                className="w-full text-left rounded-2xl bg-white/10 p-5 hover:bg-white/20 active:scale-[0.98] transition-[background-color,transform] cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                             >
-                                <span className="block text-sm font-semibold text-blue-200 mb-2">
+                                <span className="block text-base font-semibold text-blue-100 mb-2">
                                     {t.copyEmail}
                                 </span>
 
@@ -155,7 +147,7 @@ export default function Contact({ t }) {
                             const Icon = item.icon;
 
                             const cardClass =
-                                "group bg-white border border-gray-200 rounded-3xl p-6 shadow-sm hover:shadow-lg hover:border-blue-200 transition-all duration-300 text-left";
+                                "group bg-white rounded-3xl p-6 hover:bg-blue-50 transition-colors duration-300 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800";
 
                             const cardContent = (
                                 <>
@@ -167,7 +159,7 @@ export default function Contact({ t }) {
                                         {item.label}
                                     </h3>
 
-                                    <p className="text-gray-600 font-semibold break-all">
+                                    <p className="text-gray-800 font-semibold break-all">
                                         {item.value}
                                     </p>
                                 </>

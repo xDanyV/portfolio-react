@@ -15,7 +15,7 @@
         "modern": "modern",
         "and": "and",
         "functional": "functional",
-        "descriptionEnd": "web experiences, focused on intuitive interfaces, optimal performance, and responsive design.",
+        "descriptionEnd": " web experiences, focused on intuitive interfaces, optimal performance, and responsive design.",
         "button": "Technologies",
         "eyebrow": "Available for frontend opportunities",
         "projectsButton": "View projects",
@@ -69,7 +69,6 @@
         }
     },
     "about": {
-        "badge": "Professional profile",
         "title": "About me",
         "descriptionOne": "I am a Software Development graduate specialized in building modern web applications, intuitive interfaces, and solutions focused on real-world problems.",
         "descriptionTwo": "I am focused on growing as a frontend developer, contributing to teams where continuous learning, product quality, and constant improvement are valued.",
@@ -124,37 +123,34 @@
         ]
     },
     "projects": {
-        "badge": "Portfolio",
         "title": "Projects",
         "subtitle": "Some projects where I apply modern frontend, responsive design, animations, and real functionality.",
         "liveDemo": "View project",
-        "featured": "Featured",
         "items": {
             "matchbox": {
                 "title": "Matchbox",
                 "description": "Letterboxd-style web app for Champions League matches: rate and review games, vote for the MVP, keep a diary of what you watched, and explore stats, line-ups and standings for 439 matches (2022-2025).",
-                "type": "Full-stack web app",
-                "status": "In development",
                 "imageAlt": "Preview of Matchbox project"
+            },
+            "ruta-uno": {
+                "title": "Ruta Uno Café & Pizza",
+                "description": "Landing page for a pizzeria and coffee shop in Tijuana: pizza carousel, menu by category, specialty coffee bar, and location with opening hours.",
+                "imageAlt": "Preview of Ruta Uno Café & Pizza project"
             },
             "rosa-pastel": {
                 "title": "Rosa Pastel Bakery",
                 "description": "Landing page for a bakery with a product catalog, attractive visual design, and contact section.",
-                "type": "Landing page",
-                "status": "Live deploy",
                 "imageAlt": "Preview of Rosa Pastel Bakery project"
             },
             "barbershop-saas": {
                 "title": "Barbershop SaaS",
                 "description": "SaaS project for barbershop management, focused on bookings, appointment administration, and user experience.",
-                "type": "SaaS web app",
-                "status": "Personal project",
                 "imageAlt": "Preview of Barbershop SaaS project"
             }
-        }
+        },
+        "techLabel": "Technologies used"
     },
     "contact": {
-        "badge": "Contact",
         "title": "Let's work together",
         "subtitle": "If you have an opportunity, collaboration, or want to know more about my work, you can reach me through these channels.",
         "github": "GitHub",

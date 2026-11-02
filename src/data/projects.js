@@ -8,9 +8,14 @@ export const projects = [
     {
         id: "matchbox",
         tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Tailwind"],
-        link: "https://matchboxd-j4ginar2c-daniel-valencias-projects-a86e1fc4.vercel.app",
+        link: "https://matchboxd-iota.vercel.app/",
         image: "/projects/Matchbox.png",
-        featured: true,
+    },
+    {
+        id: "ruta-uno",
+        tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+        link: "https://ruta-uno-pizza.vercel.app/",
+        image: "/projects/RutaUno.webp",
     },
     {
         id: "rosa-pastel",
@@ -23,6 +28,5 @@ export const projects = [
         tech: ["Next.js", "TypeScript", "Prisma", "Vercel"],
         link: "https://barbershop-saas-azure.vercel.app/",
         image: "/projects/BarberShop.png",
-        featured: true,
     },
 ];

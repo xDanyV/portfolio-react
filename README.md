@@ -50,8 +50,7 @@ src/
        id: "mi-proyecto",
        tech: ["React", "Tailwind"],
        link: "https://mi-proyecto.vercel.app/",
-       image: "/projects/MiProyecto.png",
-       featured: false, // opcional: muestra la etiqueta "Destacado"
+       image: "/projects/MiProyecto.webp",
    },
    ```
 
@@ -61,13 +60,11 @@ src/
    "mi-proyecto": {
        "title": "Mi proyecto",
        "description": "Qué hace y qué resuelve.",
-       "type": "Web app",
-       "status": "Deploy activo",
        "imageAlt": "Vista previa de Mi proyecto"
    }
    ```
 
-Un proyecto sin textos en el idioma activo no se muestra.
+Los proyectos se muestran en el orden del arreglo. Un proyecto sin textos en el idioma activo no se muestra.
 
 ## Idiomas
 
