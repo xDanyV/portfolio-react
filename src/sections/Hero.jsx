@@ -5,7 +5,7 @@ export default function Hero({ t }) {
     return (
         <section
             id="inicio"
-            className="relative min-h-[100svh] flex flex-col justify-center items-center text-center px-5 pt-24 pb-32 md:pt-28 md:pb-20 overflow-hidden bg-white"
+            className="relative min-h-svh flex flex-col justify-center items-center text-center px-5 pt-24 pb-32 md:pt-28 md:pb-20 overflow-hidden bg-white"
         >
             {/* Fondo grid animado */}
             <div className="absolute inset-0 pointer-events-none">

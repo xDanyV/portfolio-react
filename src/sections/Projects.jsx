@@ -45,7 +45,7 @@ export default function Projects({ t }) {
                             whileTap={{ scale: 0.98 }}
                             className="group relative flex flex-col overflow-hidden rounded-3xl bg-gray-900 transition-colors duration-300 hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                         >
-                            <div className="relative aspect-[2/1] overflow-hidden bg-gray-800">
+                            <div className="relative aspect-2/1 overflow-hidden bg-gray-800">
                                 <img
                                     src={project.image}
                                     alt={project.imageAlt}
@@ -80,7 +80,7 @@ export default function Projects({ t }) {
                                     {project.tech.map((tech) => (
                                         <li
                                             key={tech}
-                                            className="rounded-full bg-white/[0.08] px-3 py-1.5 text-sm font-semibold text-blue-100"
+                                            className="rounded-full bg-white/8 px-3 py-1.5 text-sm font-semibold text-blue-100"
                                         >
                                             {tech}
                                         </li>
