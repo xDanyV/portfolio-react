@@ -6,6 +6,13 @@
 //      (projects.items.<id>).
 export const projects = [
     {
+        id: "matchbox",
+        tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Tailwind"],
+        link: "https://matchboxd-j4ginar2c-daniel-valencias-projects-a86e1fc4.vercel.app",
+        image: "/projects/Matchbox.png",
+        featured: true,
+    },
+    {
         id: "rosa-pastel",
         tech: ["React", "Tailwind", "Framer Motion"],
         link: "https://bakery-page-tw.vercel.app/",

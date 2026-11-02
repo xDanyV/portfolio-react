@@ -130,6 +130,13 @@
         "liveDemo": "View project",
         "featured": "Featured",
         "items": {
+            "matchbox": {
+                "title": "Matchbox",
+                "description": "Letterboxd-style web app for Champions League matches: rate and review games, vote for the MVP, keep a diary of what you watched, and explore stats, line-ups and standings for 439 matches (2022-2025).",
+                "type": "Full-stack web app",
+                "status": "In development",
+                "imageAlt": "Preview of Matchbox project"
+            },
             "rosa-pastel": {
                 "title": "Rosa Pastel Bakery",
                 "description": "Landing page for a bakery with a product catalog, attractive visual design, and contact section.",
